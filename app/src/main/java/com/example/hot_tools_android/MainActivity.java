@@ -9,7 +9,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.xy.hottools.StringUtils;
+import com.xy.hottools.core.StringUtils;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.xy.hottools;
+package com.xy.hottools.core;
 
 import android.annotation.SuppressLint;
 
