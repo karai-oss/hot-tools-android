@@ -108,5 +108,12 @@ public class StringUtils {
         return UUID.randomUUID().toString().replaceAll("-", "").substring(0, 15);
     }
 
+    public boolean isHttps(String o) {
+        return o != null && o.startsWith("https");
+    }
 
+
+    public boolean isHttp(String o) {
+        return o != null && o.startsWith("http");
+    }
 }
