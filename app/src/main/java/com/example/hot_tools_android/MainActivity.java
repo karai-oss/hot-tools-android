@@ -1,7 +1,7 @@
 package com.example.hot_tools_android;
 
 import android.os.Bundle;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,8 +9,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.xy.hottools.core.ColorUtils;
-import com.xy.hottools.core.ExecutorUtils;
+import com.xy.hottools.core.ImageUtils;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,13 +24,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        ExecutorUtils.init();
-        int color = ColorUtils.lightColor();
+        ImageView image1 = findViewById(R.id.image1);
+        ImageUtils.clipRound(image1, 0, 90, 100, 20);
 
-
-        TextView tv_text = findViewById(R.id.tv_text);
-        ExecutorUtils.execBackground(() -> {
-            tv_text.setBackgroundResource(R.drawable.ic_launcher_background);
-        });
     }
 }

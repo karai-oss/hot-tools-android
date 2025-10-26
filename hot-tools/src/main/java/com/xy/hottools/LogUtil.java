@@ -27,9 +27,9 @@ public class LogUtil {
     }
 
     /* ==========  外部可配置  ========== */
-    private static boolean sEnabled   = true;                // 总开关
-    private static Level   sMinLevel  = Level.VERBOSE;      // 最低输出级别
-    private static String  sGlobalTag = "MyApp";            // 全局 TAG
+    private static boolean sEnabled = true;                // 总开关
+    private static Level sMinLevel = Level.VERBOSE;      // 最低输出级别
+    private static String sGlobalTag = "hot-tools-android-api-v1";            // 全局 TAG
 
     public static void setEnabled(boolean enabled) {
         sEnabled = enabled;
@@ -128,12 +128,24 @@ public class LogUtil {
             int end = Math.min(index + len, length);
             String part = message.substring(index, end);
             switch (level) {
-                case VERBOSE: Log.v(tag, part); break;
-                case DEBUG:   Log.d(tag, part); break;
-                case INFO:    Log.i(tag, part); break;
-                case WARN:    Log.w(tag, part); break;
-                case ERROR:   Log.e(tag, part); break;
-                case ASSERT:  Log.wtf(tag, part); break;
+                case VERBOSE:
+                    Log.v(tag, part);
+                    break;
+                case DEBUG:
+                    Log.d(tag, part);
+                    break;
+                case INFO:
+                    Log.i(tag, part);
+                    break;
+                case WARN:
+                    Log.w(tag, part);
+                    break;
+                case ERROR:
+                    Log.e(tag, part);
+                    break;
+                case ASSERT:
+                    Log.wtf(tag, part);
+                    break;
             }
             index = end;
         }

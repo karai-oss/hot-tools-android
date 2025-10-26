@@ -4,6 +4,8 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
 
+import com.xy.hottools.LogUtil;
+
 /**
  * 线程执行器工具类
  *
@@ -41,6 +43,7 @@ public class ExecutorUtils {
      * 初始化函数
      */
     public static void init() {
+        LogUtil.i("hot-tools-android executor init .... ");
         asyncThread = BACKGROUND();
         mainThread = IO();
     }
