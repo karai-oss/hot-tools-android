@@ -67,7 +67,7 @@ public class ColorUtils {
      * 随机生成三个亮色颜色
      */
     public static int[] light3Color() {
-        int[] colors = new int[4];
+        int[] colors = new int[3];
         colors[0] = lightColor();
         colors[1] = lightColor();
         colors[2] = lightColor();
