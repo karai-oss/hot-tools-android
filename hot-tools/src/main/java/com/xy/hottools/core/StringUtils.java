@@ -237,6 +237,24 @@ public class StringUtils {
     }
 
 
+    /**
+     * 给字符串添加双引号
+     *
+     * @param o 字符串
+     */
+    public static String quotation(String o) {
+        return '"' + o + '"';
+    }
+
+    /**
+     * 给字符串添加单引号
+     *
+     * @param o 字符串
+     */
+    public static String singleQuotation(String o) {
+        return "'" + o + "'";
+    }
+
 }
 
 
