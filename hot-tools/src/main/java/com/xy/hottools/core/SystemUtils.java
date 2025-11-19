@@ -1,4 +1,7 @@
 package com.xy.hottools.core;
 
-public class TimeUtils {
+public class SystemUtils {
+
+
+
 }

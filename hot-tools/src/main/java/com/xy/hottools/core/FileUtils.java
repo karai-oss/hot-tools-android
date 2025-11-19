@@ -43,9 +43,8 @@ public class FileUtils {
      * @param fromPath 源文件地址
      * @param toPath   目标地址
      */
-    public static boolean moveTo(String fromPath, String toPath) {
-
-        return false;
+    public static boolean moveTo(String fromPath, String toPath) throws IllegalAccessException {
+        throw new IllegalAccessException("暂未开放");
     }
 
 
@@ -55,7 +54,7 @@ public class FileUtils {
      * @param fromPath 源文件地址
      * @param toPath   目标地址
      */
-    public static boolean copyFile(String fromPath, String toPath) {
-        return false;
+    public static boolean copyFile(String fromPath, String toPath) throws IllegalAccessException {
+        throw new IllegalAccessException("暂未开放");
     }
 }

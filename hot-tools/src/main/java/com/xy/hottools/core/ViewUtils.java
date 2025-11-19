@@ -46,4 +46,9 @@ public class ViewUtils {
         visibleView.setVisibility(View.VISIBLE);
         hideView.setVisibility(View.GONE);
     }
+
+    public static void changeVisibility(View... views) {
+        views[0].setVisibility(View.VISIBLE);
+        views[1].setVisibility(View.GONE);
+    }
 }
