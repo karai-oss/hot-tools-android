@@ -1,3 +1,5 @@
+import java.text.SimpleDateFormat
+
 plugins {
     alias(libs.plugins.android.library)
 }
@@ -14,6 +16,15 @@ android {
         consumerProguardFiles "consumer-rules.pro"
     }
 
+    libraryVariants.all { variant ->
+
+        variant.outputs.all { item->
+            def df = new SimpleDateFormat("MMdd")
+            outputFileName = "${project.name}_v${defaultConfig.versionName}.aar"
+        }
+    }
+
+
     buildTypes {
         release {
             minifyEnabled false
@@ -25,6 +36,7 @@ android {
         targetCompatibility JavaVersion.VERSION_11
     }
 }
+
 
 dependencies {
 
